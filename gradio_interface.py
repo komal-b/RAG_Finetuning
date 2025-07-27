@@ -8,7 +8,7 @@ from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 QDRANT_HOST = "http://localhost:6333"
 QDRANT_COLLECTION_NAME = "raw_data"
 
-MODEL_NAME = "gpt2"  # Replace with your model if needed
+MODEL_NAME = "gpt2" 
 # hf_model = hf_pipeline("text-generation", model=MODEL_NAME)
 fine_tuned_model = AutoModelForCausalLM.from_pretrained("./fine_tuned_llama2")
 fine_tuned_tokenizer = AutoTokenizer.from_pretrained("./fine_tuned_llama2")
